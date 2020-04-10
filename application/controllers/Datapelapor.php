@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class DataPelapor extends CI_Controller {
+class Datapelapor extends CI_Controller {
 
 	function __construct()
 	{
