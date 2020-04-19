@@ -21,9 +21,9 @@
 							<h3 class="card-title">Tabel Log Alarm</h3>
 						</div>
 						<div class="card-body">
-							<button type="button" class="btn btn-default bg-green" data-toggle="modal" data-target="#modal-default">
-							Cetak Laporan Log Alarm
-							</button>
+							<a href="<?php echo base_url()?>logalarm/laporan" class="btn btn-default bg-green" target="_blank">
+								Cetak Laporan Log Alarm
+							</a>
 							<div class="card-body">
 								<table id="example1" class="table table-striped">
 									<thead>

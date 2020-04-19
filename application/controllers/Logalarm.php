@@ -21,4 +21,13 @@ class Logalarm extends CI_Controller {
 		$this->load->view('menu/v_log_alarm', $data);
 		$this->load->view('footer');
 	}
+
+	public function laporan()
+	{
+		$data['dataLogAlarm'] = $this->m_logalarm->tampil_data()->result();
+		$this->load->library('pdf');
+		$this->pdf->setPaper('A4', 'potrait');
+		$this->pdf->filename = 'laporan-log-alarm-'.date('YmdHis');
+		$this->pdf->load_view('v_laporan_pdf', $data);
+	}
 }
