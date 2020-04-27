@@ -55,9 +55,9 @@ class Alarm extends CI_Controller {
 		$data['pesanCount']  = $this->m_pesanlaporan->tampil_jumlah_pesan($where)->num_rows();
 		$jumlahNotif = $data['alarmCount'] + $data['pesanCount'];
 		if ($jumlahNotif > 0) {
-			echo "(".$jumlahNotif.") DKT Panic Button";
+			echo "(".$jumlahNotif.") RS Panic Button";
 		} else {
-			echo "DKT Panic Button";
+			echo "RS Panic Button";
 		}
 	}
 

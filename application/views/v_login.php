@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>DKT Panic Button | Admin Login</title>
+		<title>RS Panic Button | Admin Login</title>
 		<!-- Tell the browser to be responsive to screen width -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/dist/img/PanicButtonLogo.png">
@@ -21,7 +21,7 @@
 	<body class="hold-transition login-page">
 		<div class="login-box">
 			<div class="login-logo">
-				<a href="<?php echo base_url(); ?>assets/index2.html"><b>DKT</b> Panic Button</a>
+				<a href="<?php echo base_url(); ?>assets/index2.html"><b>RS</b> Panic Button</a>
 			</div>
 			<!-- /.login-logo -->
 			<div class="card">

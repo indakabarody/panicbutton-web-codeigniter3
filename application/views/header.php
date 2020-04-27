@@ -69,7 +69,7 @@
 				alt="AdminLTE Logo"
 				class="brand-image img-circle elevation-3"
 				style="opacity: .8">
-			<span class="brand-text font-weight-light">DKT Panic Button</span>
+			<span class="brand-text font-weight-light">RS Panic Button</span>
 			</a>
 			<!-- Sidebar -->
 			<div class="sidebar">
