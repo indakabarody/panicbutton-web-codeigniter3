@@ -32,11 +32,11 @@ class M_alarm extends CI_Model {
 	function stop_alarm_android($table, $where, $idAlarm)
 	{
 		$dataAlarm = $this->db->query("SELECT * FROM ".$table." WHERE idAlarm = '".$idAlarm."' LIMIT 1")->row_array();
-		$dataAlarmCount = $this->db->query("SELECT * FROM pesanKhusus WHERE idAlarm = '".$idAlarm."'")->num_rows();
+		$dataAlarmCount = $this->db->query("SELECT * FROM pesankhusus WHERE idAlarm = '".$idAlarm."'")->num_rows();
 		if ($dataAlarm['statusAlarm'] == "Belum Dikonfirmasi") {
 			if ($dataAlarmCount > 0) {
 				$this->db->where($where);
-				$this->db->delete('pesanKhusus');
+				$this->db->delete('pesankhusus');
 				$this->db->where($where);
 				$this->db->delete($table);
 			} else {

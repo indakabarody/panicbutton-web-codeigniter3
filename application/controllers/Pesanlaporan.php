@@ -17,7 +17,7 @@ class Pesanlaporan extends CI_Controller {
 	{
 		$data = array('statusPesan' => 'Read');
 		$where = array('statusPesan' => 'Unread');
-		$this->m_pesanlaporan->baca_pesan('pesanKhusus', $data, $where);
+		$this->m_pesanlaporan->baca_pesan('pesankhusus', $data, $where);
 		$this->load->view('header');
 		$this->load->view('menu/v_pesan_laporan');
 		$this->load->view('footer');
