@@ -3,15 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Androidapi extends CI_Controller {
 
-	function __construct()
-	{
-		parent::__construct();
-		$this->load->model('m_alarm');	
-		$this->load->model('m_pesanlaporan');	
-		$this->load->model('m_user');
-		$this->load->helper('url');
-	}
-
 	public function index()
 	{
         echo "This is an API for Android application. Nothing's here. Please go back.";

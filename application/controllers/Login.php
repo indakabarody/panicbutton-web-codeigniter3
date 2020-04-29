@@ -3,15 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
 
-	function __construct()
-	{
-		parent::__construct();
-		$this->load->helper(array('form','url','html'));
-		$this->load->library(array('pagination','form_validation','encryption','session'));
-		$this->load->model('m_login');
-		$this->load->model('m_admin');
-	}
-
 	public function index()
 	{
 		if ($this->session->userdata('status') == "logged in") {

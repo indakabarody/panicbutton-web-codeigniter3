@@ -6,9 +6,6 @@ class Datanomortelegram extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('m_nomortelegram');
-		$this->load->helper(array('form','url','html'));
-		$this->load->library(array('pagination','form_validation','encryption','session'));
 		if ($this->session->userdata('status') != "logged in") {
 			redirect('login');
 		}
