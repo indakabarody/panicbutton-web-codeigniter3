@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/indakaba/public_html/panicbutton
+    - /bin/cp -r * $DEPLOYPATH
