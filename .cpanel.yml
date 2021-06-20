@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/indakaba/public_html/panicbutton
+    - export DEPLOYPATH=/home/indakaba/public_html/subdomains/panicbutton.indakabarody.com
     - /bin/cp -r * $DEPLOYPATH
 		- /bin/rm $DEPLOYPATH/DATABASE.sql
